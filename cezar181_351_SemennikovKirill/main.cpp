@@ -7,9 +7,18 @@
 //
 
 #include <iostream>
-
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+#include <stdlib.h>
+int main() {
+    char sym[500];
+    std::cout << "Введите сторку\n";
+    gets(sym);
+    int a;
+    for(int i = 0;i<500;i++){
+        a=sym[i];
+        sym[i]
+        std::cout << sym[i] ;
+        
+    }
+  
+   
 }
