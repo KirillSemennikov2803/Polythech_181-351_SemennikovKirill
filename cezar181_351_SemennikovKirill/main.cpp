@@ -1,24 +1,34 @@
-//
-//  main.cpp
-//  cezar181_351_SemennikovKirill
-//
-//  Created by Kirill on 27.09.2018.
-//  Copyright © 2018 Kirill. All rights reserved.
-//
-
 #include <iostream>
-#include <stdlib.h>
-int main() {
-    char sym[500];
-    std::cout << "Введите сторку\n";
-    gets(sym);
+void cezar(char * sym){
     int a;
-    for(int i = 0;i<500;i++){
-        a=sym[i];
-        sym[i]
-        std::cout << sym[i] ;
-        
-    }
-  
-   
+    for (int i = 0; i <= 12; i++) {
+        a = (sym[i]);
+        if (a >= 97 and a <= 99) {
+            a = 23 + a;
+            sym[i] = char(a);
+            a = 0;
+        }
+        if (a >= 100 and a <= 122) {
+            a = a - 3;
+            sym[i] = (char)a;
+            a = 0;
+        }
+        if (a >= 65 and a <= 67) {
+            a = 23 + a;
+            sym[i] = (char)a;
+            a = 0;
+        }
+        if (a >= 68 and a <= 90) {
+            a = a -3 ;
+            sym[i] = (char)a;
+            a = 0;
+        }
 }
+}
+int main(){
+    char sym[12]="Hello world";
+    cezar(sym);
+    std::cout << sym << std::endl;
+    return 0;
+}
+
