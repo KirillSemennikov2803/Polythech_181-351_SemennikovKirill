@@ -1,0 +1,4 @@
+﻿  5 lab.cpp
+c:\users\k.a.semennikov\source\repos\semennikov_181-351\semennikov_181-351\5 lab.cpp(51): warning C4302: <function-style-cast>: усечение из "char []" к "char"
+  Semennikov_181-351.vcxproj -> C:\Users\k.a.semennikov\source\repos\Semennikov_181-351\Debug\Semennikov_181-351.exe
+  Semennikov_181-351.vcxproj -> C:\Users\k.a.semennikov\source\repos\Semennikov_181-351\Debug\Semennikov_181-351.pdb (Partial PDB)
