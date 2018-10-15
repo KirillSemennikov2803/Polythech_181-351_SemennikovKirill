@@ -3,6 +3,8 @@
 #include "matrix.h"
 matrix::matrix()
 {
+	strok = 0;
+	stolb = 0;
 	for (int i = 0; i < 10; i++)
 	{
 		for (int j = 0; j < 10; j++)
@@ -20,7 +22,19 @@ int matrix::getStrok(){
 };
 int matrix::getStolb() {
 	return stolb;
-};
+}
+bool matrix::multiplication(int number)
+{
+	for (int stroki = 0; stroki < strok; stroki++)
+	{
+		for (int stolbs = 0; stolbs < stolb; stolbs++)
+		{
+			first_matr[stroki][stolbs] *= number;
+		}
+	}
+	return true;
+}
+;
 int matrix::getElem(int st, int sl) {
 	if ((0 <= st < stolb) and (0 <= sl < strok)) {
 		return first_matr[st][sl];

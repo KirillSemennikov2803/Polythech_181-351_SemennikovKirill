@@ -15,7 +15,7 @@ public:
 	bool transp();
 	int getStrok();
 	int getStolb();
-
+	bool multiplication(int number);
 	matrix();
 	~matrix();
 };
