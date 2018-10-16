@@ -7,15 +7,15 @@ private:
 	int strok;
 public:
 	bool correx(int a, int b);
-	bool input();
-	bool print();
+	virtual bool input();
+	virtual bool print();
 	bool summMatrix(matrix matr2);
 	bool multMatrix(matrix matr2);
 	int getElem(int st, int sl);
 	bool transp();
 	int getStrok();
 	int getStolb();
-	bool multiplication(int number);
+	virtual bool multiplication(int number);
 	matrix();
 	~matrix();
 };

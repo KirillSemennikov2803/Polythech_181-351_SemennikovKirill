@@ -3,7 +3,7 @@
 #include "vector.h"
 
 
-bool vector::inputV()
+bool vector::input()
 {
 	int stolbs;
 	std::cout << "¬ведите количество измерений ";
@@ -21,6 +21,16 @@ bool vector::inputV()
 		stolb = stolbs;
 
 	}
+	std::cout << std::endl;
+	return true;
+}
+
+bool vector::multiplication(int number)
+{
+	for ( int i = 0; i < stolb; i++)
+	{
+		first_matr[0][i] *= number;
+	}
 	return true;
 }
 
@@ -36,10 +46,10 @@ int vector::skolar_product(vector matr2)
 	{
 		c += first_matr[0][i] * matr2.first_matr[0][i];
 	}
+	std::cout << "—кол€рное произведение = " << c << std::endl;
 	return c;
 }
-
-bool vector::printV()
+bool vector::print()
 {
 	for (int i = 0; i < stolb; i++)
 	{
@@ -48,19 +58,10 @@ bool vector::printV()
 	std::cout << std::endl;
 	return true;
 }
-
 vector::vector()
 {
-	strok = 1;
-	stolb = 1;
-	for (int i = 0; i < 10; i++)
-	{
-		first_matr[0][i] = 0;
-	}
+
 }
-
-
-
 vector::~vector()
 {
 }
