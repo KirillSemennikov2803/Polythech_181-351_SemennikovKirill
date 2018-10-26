@@ -3,7 +3,7 @@
 class vector : public matrix
 {
 private:
-	int first_matr[10][10];
+	int *first_matr;
 	const int strok = 1;
 	int stolb;
 public:

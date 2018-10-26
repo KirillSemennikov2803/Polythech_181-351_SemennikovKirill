@@ -12,11 +12,12 @@ bool vector::input()
 		) {
 		return false;
 	}
+	first_matr = new int[stolbs];
 	for (int i = 0; i < stolbs; i++)
 	{
 
 		std::cout << "input element " << (i + 1) << "\t";
-		std::cin >> first_matr[0][i];
+		std::cin >> first_matr[i];
 		std::cout << "\n";
 		stolb = stolbs;
 
@@ -29,7 +30,7 @@ bool vector::multiplication(int number)
 {
 	for (int i = 0; i < stolb; i++)
 	{
-		first_matr[0][i] *= number;
+		first_matr[i] *= number;
 	}
 	return true;
 }
@@ -44,7 +45,7 @@ int vector::skolar_product(vector matr2)
 	int c = 0;
 	for (int i = 0; i < stolb; i++)
 	{
-		c += first_matr[0][i] * matr2.first_matr[0][i];
+		c += first_matr[i] * matr2.first_matr[i];
 	}
 	std::cout << "skolar product  = " << c << std::endl;
 	return c;
@@ -53,7 +54,7 @@ bool vector::print()
 {
 	for (int i = 0; i < stolb; i++)
 	{
-		std::cout << first_matr[0][i] << "    ";
+		std::cout << first_matr[i] << "    ";
 	}
 	std::cout << std::endl;
 	return true;
